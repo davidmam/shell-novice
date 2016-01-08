@@ -45,6 +45,7 @@ $ whoami
 ~~~ {.output}
 nelle
 ~~~
+(Obviously this will have changed to show _your_ username) 
 
 More specifically, when we type `whoami` the shell:
 
@@ -72,12 +73,14 @@ $ pwd
 ~~~ {.output}
 /Users/nelle
 ~~~
+Your response will be different (probably `/` on the Dundee machines). This doesn't matter.
 
 > ## Home directory {.callout}
 >
 > The home directory path will look different on different operating systems.
 > On Linux it will look like `/home/nelle`,
 > and on Windows it will be similar to `C:\Documents and Settings\nelle`.
+> On the Dundee machines it will look like `/h`.
 > Note that it may look slightly different for different versions of Windows.
 
 
@@ -99,24 +102,30 @@ let's have a look at how the file system as a whole is organized.
 At the top is the **root directory**
 that holds everything else.
 We refer to it using a slash character `/` on its own;
-this is the leading slash in `/Users/nelle`.
+this is the leading slash in `/Users/nelle` and in `/h` (and every other path).
 
-Inside that directory are several other directories:
+Inside that directory are several other directories. On a Linux system they would look like:
 `bin` (which is where some built-in programs are stored),
 `data` (for miscellaneous data files),
 `Users` (where users' personal directories are located),
 `tmp` (for temporary files that don't need to be stored long-term),
 and so on:
 
+> ## To avoid confusion {.callout}
+> We are going to pretend that the zipped set of directories we downloaded and opened (which should be in `/h/shell-novice/data`)
+> is the complete file system. So for all the commands below, add `/h/shell-novice/data` to the directory path so 
+> `/Users/nelle` is really `/h/shell-novice/data/Users/nelle`. The first few of these will have the real path added to remind you.
+
+
 ![The File System](fig/filesystem.svg)
 
-We know that our current working directory `/Users/nelle` is stored inside `/Users`
+We know that our current working directory `/Users/nelle` is stored inside `/Users` (`/h/shell-novice/data/Users/nelle` is inside `/h/shell-novice/data/Users`)
 because `/Users` is the first part of its name.
 Similarly,
 we know that `/Users` is stored inside the root directory `/`
 because its name begins with `/`.
 
-Underneath `/Users`,
+Underneath `/Users`, 
 we find one directory for each user with an account on this machine.
 The Mummy's files are stored in `/Users/imhotep`,
 Wolfman's in `/Users/larry`,
@@ -134,6 +143,8 @@ which is why `nelle` is the last part of the directory's name.
 
 Let's see what's in Nelle's home directory by running `ls`,
 which stands for "listing":
+
+(Before you run this, change directory through to the home directory by giving the command `cd /h/shell-novice/data/Users/nelle`)
 
 ~~~ {.bash}
 $ ls
