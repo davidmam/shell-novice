@@ -37,3 +37,4 @@ modern implementations of Unix (including most packages that provide
 Unix-like tools for Windows) but if you get strange errors in shell
 scripts written by colleagues, check to see which shell they were
 written for.
+\`Dundee edition\`

@@ -288,3 +288,4 @@ wildcard
     In the Unix shell,
     the wildcard `*` matches zero or more characters,
     so that `*.txt` matches all files whose names end in `.txt`.
+\`Dundee edition\`

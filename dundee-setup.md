@@ -40,3 +40,4 @@ though you may see an instructor using it to do a quick edit. Instead we will be
 At a Git-Bash prompt type
 ```git config --global core.editor "'C:\Program Files (x86)\Notepad++\notepad++.exe' -multiInst -notabbar -nosession -noPlugin"```
 This will now launch Notepad++ whenever Git requires an editor.
+\`Dundee edition\`

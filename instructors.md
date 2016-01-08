@@ -225,3 +225,4 @@ Whatever you use,
 please *test it yourself* on a Windows machine *before* your workshop:
 things may always have changed behind your back since your last workshop.
 And please also make use of our Windows setup helper.
+\`Dundee edition\`
